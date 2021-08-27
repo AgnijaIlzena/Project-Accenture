@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include("../partials/head") %>
+<body>
+    
+    <%- include("../partials/navigation") %>
+   
+<form action="/posts/create" method="POST">
+<div>
+    <input name="name"/>
+</div>
+<div>
+    <input name="month" />
+</div>
+<div>
+    <select name="year">
+        <option value="2021">2021</option>
+        <option value="2020">2020</option>
+        <option value="2019">2019</option>
+    </select>
+</div>
+<button type="submit">Add Post</button>
+</form>
+   
+    
+</body>
+</html>
+
