@@ -2,13 +2,14 @@
     <div id="contacts">
         <ul>
             <li>{{ Agate }}</li>
-            <li>{{ Agnija}}</li>
+            <li>{{ Agnija }}</li>
         </ul>
     </div>
 </template>
 
 <script>
 export default {
-   name: 'Contacts'
+   name: 'Contacts',
+   
 }
 </script>

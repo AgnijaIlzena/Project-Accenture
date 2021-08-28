@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import App from './App.vue'
 import VueRouter from 'vue-router'
+import Home from './components/Article.vue'
 import Registration from './components/Registration.vue'
 import Login from './components/Login.vue'
 import AllPosts from './components/AllPosts.vue'
@@ -33,9 +34,9 @@ const routes = [
     name: "NewArticle"
   },
   {
-    path: '/',
-  component: App,
-  name: "Home"
+    path: '/article',
+    component: Home,
+    name: "Home"
 },
 {
   path: '/contact',
@@ -52,3 +53,5 @@ new Vue({
   render: h => h(App),
   router,
 }).$mount('#app')
+
+export default router

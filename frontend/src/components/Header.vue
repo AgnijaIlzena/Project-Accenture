@@ -4,7 +4,7 @@
         <div class="button-container">
              <img id="logo" alt="Vue logo" src="../assets/AA_logo.jpg">
         <ul id="nav1">
-            <li class="headerLi"><router-link to='/'>Home</router-link></li>
+            <li class="headerLi"><router-link to='/article'>Home</router-link></li>
             <!-- <router-view></router-view> -->
             <li class="headerLi"><router-link to="./allposts">AllPosts</router-link></li>
             <!-- <li class="headerLi"><a href="/" target="_blank">Home</a></li>
@@ -20,44 +20,44 @@
             </li>
             <li class="headerLi">
                 <!-- v-on:click="clicker" -->
-                <router-link to="/login">Log in/Register</router-link>
+                <router-link to="/login">Log in</router-link>
             </li>
         </ul>
         </div>
-        <Dropdown :options="options" v-if="dropdownState"/>
+        <!-- <Dropdown :options="options" v-if="dropdownState"/> -->
     </header>
 </template>
 
 //script
 <script>
-    import Dropdown from './Dropdown.vue'
+    // import Dropdown from './Dropdown.vue'
 
     export default {
         name: 'Header',
-        props: {},
-        data () {
-            return {
-                options: [
-                    {
-                        title: "Add new post",
-                        url: "my-posts"
-                    },
-                    {
-                        title: "Log in",
-                        url: "login"
-                    }
-                ],
-                dropdownState: false
-            }
-        },
-        components: {
-            Dropdown,
-        },
-        methods: {
-         clicker () {
-            return this.dropdownState = !this.dropdownState
-        }
-        }     
+        // props: {},
+        // data () {
+        //     return {
+        //         options: [
+        //             {
+        //                 title: "Add new post",
+        //                 url: "my-posts"
+        //             },
+        //             {
+        //                 title: "Log in",
+        //                 url: "login"
+        //             }
+        //         ],
+        //         dropdownState: false
+        //     }
+        
+        // components: {
+        //     Dropdown,
+        // },
+        // methods: {
+        //  clicker () {
+        //     return this.dropdownState = !this.dropdownState
+        // }
+             
     }
 </script>
 

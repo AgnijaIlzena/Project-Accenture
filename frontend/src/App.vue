@@ -1,7 +1,9 @@
 <template>
     <div>
     <Header/>
-    <div class="page-container">
+    
+    <router-view></router-view>
+    <!-- <div class="page-container">
       <Article
       v-for="article in articleArray"
       :title="article.title"
@@ -9,7 +11,7 @@
       :key="article.title"
       v-on:click="clicker"
       />
-    </div>
+    </div> -->
     <!-- <NewArticle/>
     <Login :authType="authType" /> -->
     <!-- <router-view></router-view>
@@ -19,12 +21,14 @@
     <!-- <Shop/>
     <Registration/> -->
     <Footer/>
-    </div>
+    </div> 
+   
+
 </template>
 
 <script>
 import Header from './components/Header.vue'
-import Article from './components/Article.vue'
+// import Article from './components/Article.vue'
 // import Login from './components/Login.vue'
 // import NewArticle from './components/NewArticle.vue'
 // import Registration from './components/Registration.vue'
@@ -34,22 +38,22 @@ import Footer from './components/Footer.vue'
 
 export default {
   name: 'App',
-  data () {
-    return {
-      articleArray: [
-        {
-          title: "Bordeaux wine glass",
-          img: "https://images.crateandbarrel.com/is/image/Crate/ia-types-wine-glasses-5"
-        },
-        {
-          title: "Burgundy wine glass",
-          img: "https://images.crateandbarrel.com/is/image/Crate/ia-types-wine-glasses-7"
-        },
-        {
-          title: "White wine glass",
-          img: "https://images.crateandbarrel.com/is/image/Crate/ia-types-wine-glasses-11"
-        }
-      ], 
+  // data () {
+  //   return {
+  //     articleArray: [
+  //       {
+  //         title: "Bordeaux wine glass",
+  //         img: "https://images.crateandbarrel.com/is/image/Crate/ia-types-wine-glasses-5"
+  //       },
+  //       {
+  //         title: "Burgundy wine glass",
+  //         img: "https://images.crateandbarrel.com/is/image/Crate/ia-types-wine-glasses-7"
+  //       },
+  //       {
+  //         title: "White wine glass",
+  //         img: "https://images.crateandbarrel.com/is/image/Crate/ia-types-wine-glasses-11"
+  //       }
+  //     ], 
 
       footerArray: [
         {
@@ -63,11 +67,11 @@ export default {
       // },
     
       // authType: "/register"
-    }
-  },
+    // },
+  // },
   components: {
     Header,
-    Article,
+    // Article,
     // Login,
     // NewArticle,
     // Registration,
@@ -95,7 +99,8 @@ export default {
   mounted() {
     this.authSwitcher()
   }
-}
+};
+
 </script>
 
 
