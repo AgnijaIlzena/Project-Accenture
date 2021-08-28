@@ -18,7 +18,9 @@
     <!-- <router-link to="/newarticle">Add new article</router-link> -->
     <!-- <Shop/>
     <Registration/> -->
-    <Footer/>
+    <Footer
+    v-bind="footer in footerArray"
+    :key="footer.subscription"/>
     </div>
 </template>
 
