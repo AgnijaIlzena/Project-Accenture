@@ -1,8 +1,8 @@
-//template
 <template>
     <header>
-         <img id="logo" alt="Vue logo" src="../assets/AA_logo.jpg">
-        <div>
+        
+        <div class="button-container">
+             <img id="logo" alt="Vue logo" src="../assets/AA_logo.jpg">
         <ul id="nav1">
             <li class="headerLi"><router-link to='/'>Home</router-link></li>
             <!-- <router-view></router-view> -->
@@ -10,8 +10,8 @@
             <!-- <li class="headerLi"><a href="/" target="_blank">Home</a></li>
             <li class="headerLi"><a href="/" target="_blank">All posts</a></li> -->
         </ul>
-        </div>
-        <div class="button-container">
+        <!-- </div>
+        <div class="button-container"> -->
         <ul id="nav2">
             <li class="headerLi">
                 <!-- v-on:click="clicker" -->
@@ -66,7 +66,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap');
     header {
-        display: flex;
+        /* display: flex; */
         background-color: #bb8760;
         width: 100%;
         justify-content: space-between;
@@ -75,14 +75,14 @@
     #nav1 {
         display: flex;
         flex: 1;
-        justify-content: start;
+        justify-content: flex-start;
         list-style: none;
     }
 
     #nav2{
          display: flex;
         flex: 1;
-        justify-content: end;
+        justify-content: flex-end;
         list-style: none;
       
     }
