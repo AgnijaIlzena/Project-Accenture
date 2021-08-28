@@ -1,22 +1,25 @@
-const Posts = require("../models/Posts")
+const PostsRepository = require("../repositories/PostsRepository");
+//const Posts = require("../models/Posts")
 
 
 class PostsController {
-
-    main(req, res) {
+//used for posts list and indivudual post page
+    async main(req, res) {
         const { postId } = req.params;
         if (postId) {
-            const post = Posts.getById(postId);
+            const post = await PostsRepository.getById(postId);
             if(!post) {
                 res.render("pages/error");
             } else {
-                res.render("pages/post", {post});
+                res.render("pages/postForm", {post});
             }
         }else {
-            const posts = Posts.getAll();
+            const posts = await PostsRepository.getAll();
             res.render("pages/posts", {posts});
         }
     }
+    //used for rendering create post form
+    //------- jaapaarbauda taalaak
     renderForm(req, res){
         res.render("pages/addPost");
     }
