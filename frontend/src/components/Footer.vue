@@ -24,7 +24,10 @@ export default {
     align-items: center;
     list-style: none;
     padding: 1rem;
-    position: static;
+      position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
 }
 
 h3, p {

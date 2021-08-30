@@ -11,15 +11,14 @@
 </template>
     
 <script>
-
 export default {
     name: 'Registration'
 }
 </script>
 
 <style>
-#registration-container{
-    background-color: #ffdada;
+    #registration-container{
+        background-color: #ffdada;
 }
 
 
