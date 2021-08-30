@@ -39,6 +39,12 @@
         font-size: 1rem;
     }
 
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+  }
 
 </style>
 
