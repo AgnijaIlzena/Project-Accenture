@@ -8,12 +8,9 @@
             <h3 
             class="article-title"
             :v-on:click="clicker"
-            >{{title}}
-            </h3>
+            >{{title}}</h3>
         </div>
-        
     </div>
-    
 </template>
 
 <script>
@@ -23,7 +20,8 @@
             title: String,
             img: String
         },
-    }
+};
+        
 </script>
 
 <style>

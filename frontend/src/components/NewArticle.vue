@@ -3,9 +3,10 @@
     <form v-on:submit.prevent>
         <h2>Add a new Post</h2>
         <input type="text" placeholder="Title"/>
-        <input type="file"/>
+        <!-- <input type="file"/> -->
         <textarea id="postBox" rows ="5" cols="60" name="post" placeholder="Text"></textarea>
-        <input type="date"/>
+        <input type="month"/>
+        <input type="number" min="2019" max="2021" step="1">
         <button>Post</button>
     </form>
 </div>
