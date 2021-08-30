@@ -4,8 +4,9 @@
         <h2>Login</h2>
         <input type="text" placeholder="Name"/>
         <input class="password" type="password" placeholder="Password"/>
-        <button @click="authType.callBack">{{ authType.title }}</button>
-        <p id="signUp">If You are not registered please <a href="/" target="_self">Sign up!</a></p>
+        <button>Submit</button>
+        <p id="signUp">If You are not registered please
+        <router-link to="./registration">registrate!</router-link></p>
     </form>
 </div>
 </template>
@@ -13,12 +14,6 @@
 <script>
     export default {
         name: 'Login',
-        props: {
-            authType: {
-                title: String,
-                callBack: Function
-            }
-        }
     }
 </script>
 

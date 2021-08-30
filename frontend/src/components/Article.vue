@@ -8,12 +8,9 @@
             <h3 
             class="article-title"
             :v-on:click="clicker"
-            >{{title}}
-            </h3>
+            >{{title}}</h3>
         </div>
-        
     </div>
-    
 </template>
 
 <script>
@@ -23,24 +20,6 @@
             title: String,
             img: String
         },
-        data () {
-        return {
-        articleArray: [
-        {
-          title: "Bordeaux wine glass",
-          img: "https://images.crateandbarrel.com/is/image/Crate/ia-types-wine-glasses-5"
-        },
-        {
-          title: "Burgundy wine glass",
-          img: "https://images.crateandbarrel.com/is/image/Crate/ia-types-wine-glasses-7"
-        },
-        {
-          title: "White wine glass",
-          img: "https://images.crateandbarrel.com/is/image/Crate/ia-types-wine-glasses-11"
-        }
-      ],
-        }
-    }
 };
         
 </script>
