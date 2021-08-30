@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include("../partials/head") %>
+    <body>
+        <%- include("../partials/navigation") %>
+        
+        <h4><%= post ? post.username : 'New Post' %></h4>
+
+        <form method="POST">
+            
+            <div>
+                <label>name:</label><br />
+                <input name="name" value="<%= post ? post.name : '' %>"  required />
+            </div>
+            <br />
+            <div>
+                <label>content:</label><br />
+                <input name="content" value="<%= post ? post.content : '' %>" required />
+            </div>
+            <br />
+            <div>
+                <label>month:</label><br />
+                <select name="month" value="<%= post ? post.month : '' %>" required>
+                    <option value="january">january</option>
+                    <option value="february">february</option>
+                    <option value="march">march</option>
+                    <option value="april">april</option>
+                    <option value="may">may</option>
+                    <option value="june">june</option>
+                    <option value="july">july</option>
+                    <option value="august">august</option>
+                    <option value="september">september</option>
+                    <option value="october">october</option>
+                    <option value="november">november</option>
+                    <option value="december">december</option>
+                </select>
+            </div>
+            <br />
+            <div>
+                <label>year:</label><br />
+                <select name="year" type="number" value="<%= post ? post.year : '' %>" required>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                                 </select>
+            </div>
+            <br />
+            
+            <button type="submit" style="color: green"><%= post ? 'Update' : 'Add' %> Post</button>
+        </form>
+        <br /><br /><br />
+        <%- post ? `
+        <form action="/posts/delete/${post.id}" method="POST">
+            <button type="submit" style="color: red">Delete Post</button>
+        </form>
+        ` : '' %>
+    </body>
+</html>

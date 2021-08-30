@@ -4,6 +4,7 @@
   "description": "Final Work Accenture 2021 Agnija & Agate",
   "main": "server.js",
   "scripts": {
+    "migrations": "node runDbMigrations.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
@@ -11,8 +12,11 @@
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",
+    "dotenv": "^10.0.0",
     "ejs": "^3.1.6",
     "express": "^4.17.1",
-    "path": "^0.12.7"
+    "mysql2": "^2.3.0",
+    "path": "^0.12.7",
+    "uuid": "^8.3.2"
   }
 }

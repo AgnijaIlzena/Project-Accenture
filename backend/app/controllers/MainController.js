@@ -15,6 +15,6 @@ function MainController(req, res) {
     //     res.send("Write me to info@info.com");git
     // })
      
-    }
+   }
     
 module.exports = MainController;

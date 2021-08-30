@@ -24,7 +24,7 @@ const data = [
     },
 
     {
-        id: 3 ,
+        id: 4 ,
         name: 'Chocolat' ,
         content: 'I love black chocolate and really thanks to good red wine, as the combo of chocolate and Morgon is a paradise' ,
         month: 'February' ,
@@ -32,9 +32,9 @@ const data = [
     },
 
     {
-        id: 3 ,
-        name: 'Barrels' ,
-        content: 'You would think that older wine - it is better wine. Well I guess you have not tasted 10 years old Rosé !' ,
+        id: 5 ,
+        name: 'Pesticides' ,
+        content: 'On particular days we can observe winegrowers dressed the same, in protective combinezoneds with masks. They are working with poison.' ,
         month: 'March' ,
         year: 2020 ,
     },
