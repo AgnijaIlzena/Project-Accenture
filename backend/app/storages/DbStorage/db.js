@@ -7,7 +7,7 @@ const mysql = require("mysql2");
         host: "localhost",
         user: "root",
         password: "",
-        database: "express-blog",
+        database: "blog",
         waitForConnections: true,
         connectionLimit: 10,
     });

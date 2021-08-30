@@ -1,6 +1,4 @@
 const PostsRepository = require("../repositories/PostsRepository");
-//const Posts = require("../models/Posts")
-
 
 class PostsController {
 //used for posts list and indivudual post page
@@ -18,18 +16,35 @@ class PostsController {
             res.render("pages/posts", {posts});
         }
     }
-    //used for rendering create post form
-    //------- jaapaarbauda taalaak
+  //   //used for rendering create post form
+
     renderForm(req, res){
-        res.render("pages/addPost");
+     res.render("pages/postForm", {post: undefined});
     }
 
-    createPost(req, res) {
-        console.log(req.body);
+     //used for POST request from the form, and adding new student
+    async create(req, res) {
+       const post = await PostsRepository.create(req.body);
+        // redirect to new entry
+        res.redirect(`/posts/${post.id}`);
+      }
 
-        Posts.createPost(req, body);
-        res.render("pages/addPost");
-    }
+   // used for POST request from the form, and updating student
+  async update(req, res) {
+    const { postId } = req.params;
+    const post = await PostsRepository.update(postId, req.body);
+    // return the same form
+    res.render("pages/postForm", { post });
+   }
+
+  
+   // used for DELETE request from the form
+  async delete(req, res) {
+  const { postId } = req.params;
+  await PostsRepository.delete(postId);
+     // return to posts list
+    res.redirect("/posts");
+   }
 };
 
-module.exports = PostsController;
+module.exports = new PostsController();
