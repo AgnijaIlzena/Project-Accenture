@@ -10,17 +10,15 @@
             :v-on:click="clicker"
             >{{title}}</h3>
         </div>
+           
     </div>
 </template>
 
 <script>
     export default {
         name: 'Article',
-        props: {
-            title: String,
-            img: String
-        },
-};
+       
+}
         
 </script>
 
@@ -56,9 +54,9 @@
     color: white;
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .article-card {
       margin-bottom: 2rem;
     }
-  }
+  } */
 </style>

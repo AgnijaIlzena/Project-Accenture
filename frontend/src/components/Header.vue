@@ -1,4 +1,3 @@
-//template
 <template>
     <header>
         <router-link to="./article">All Posts</router-link>
@@ -7,17 +6,16 @@
     </header>
 </template>
 
-//script
 <script>
     export default {
         name: 'Header', 
     }
 </script>
 
-//style
 <style>
 
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap');
+
     header {
         display: flex;
         background-color: #bb8760;
@@ -39,6 +37,15 @@
         font-size: 1rem;
     }
 
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+    a{
+          margin: 5px 60px; 
+    }
+  }
 
 </style>
 

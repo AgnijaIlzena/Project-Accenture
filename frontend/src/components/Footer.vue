@@ -18,13 +18,15 @@ export default {
     background-color: #bb8760;
     color: #4f0e0e;
     display: flex;
-    font-size: 10pt;
-    line-height: 14pt;
+    font-size: 8pt;
+    line-height: 10pt;
     flex-direction: column;
     align-items: center;
     list-style: none;
-    padding: 1rem;
-    position: static;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
 
 h3, p {
