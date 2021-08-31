@@ -23,7 +23,7 @@
         <option value="2020">2020</option>
         <option value="2019">2019</option>
         </select>
-        <button>Add post</button>
+        <button type="submit">Add post</button>
     </form>
 </div>
 </template>
@@ -36,16 +36,16 @@ export default {
     data(){
         return {
             // id="",
-            postName="",
-            postContent= "",
-            postMonth="",
-            postYear=""
+            postName: "",
+            postContent: "",
+            postMonth: "",
+            postYear: ""
         };
     },
     methods: {
         async savePost(){
             try {
-                await axios.post("http://localhost:3000/server", {
+                await axios.post("http://localhost:3001/server", {
                     name: this.postName,
                     content: this.postContent,
                     month: this.postMonth,
