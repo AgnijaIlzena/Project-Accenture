@@ -42,6 +42,9 @@
         flex-direction: column;
         align-items: center;
     }
+    a{
+          margin: 5px 60px; 
+    }
   }
 
 </style>
