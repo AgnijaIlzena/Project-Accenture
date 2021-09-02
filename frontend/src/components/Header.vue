@@ -1,6 +1,6 @@
 <template>
     <header>
-        <router-link to="./home" id="H">Home</router-link>
+        <router-link to="./" id="H">Home</router-link>
         <router-link to="./allposts" id="AP">All Posts</router-link>
         <router-link to="./newarticle" id="ANP">Add new post</router-link>
         <router-link to="./registration" id="R">Registrate</router-link>

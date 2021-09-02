@@ -34,7 +34,7 @@ const routes = [
     name: "NewArticle"
   },
   {
-    path: '/home',
+    path: '/',
   component: Home,
   name: "Home"
 },
