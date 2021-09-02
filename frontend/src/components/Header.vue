@@ -19,21 +19,19 @@
 
     header {
         display: flex;
-        background-color: #bb8760;
+        background-color: #FFF76A;
         width: 100%;
         justify-content: space-between;
     }
       
     a{
         text-decoration: none;
-        color: #4f0e0e;
+        color: black;
         font-weight: bold ;
-        /* background-color: #bb8760; */
         font-family: 'Comfortaa', cursive;
-        color:#4f0e0e;
         position: relative;
         border: none;
-        margin: 20px 60px; 
+        margin: 15px 60px; 
         text-decoration: none;
         font-size: 1rem;
     }
