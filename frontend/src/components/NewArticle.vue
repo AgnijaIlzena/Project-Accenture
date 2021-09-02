@@ -55,7 +55,7 @@ export default {
                 this.postContent= "";
                 this.postMonth= "";
                 this.postYear= "";
-                this.$app.push("/");
+                // this.$app.push("/");
             } catch (error) {
                 console.log(error);
             }
@@ -80,8 +80,8 @@ form{
 }
 
 #newArticle-container{
-    background-color: #bb8760;
-    color: #4f0e0e;
+    /* background-color: #ffffff; */
+    color: #ffdada;
 }
 
 select{

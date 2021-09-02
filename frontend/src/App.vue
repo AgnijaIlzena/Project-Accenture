@@ -17,7 +17,7 @@ export default {
   name: 'App',
   components: {
     Footer,
-    Header
+    Header,
   }
 }
 </script>
@@ -28,7 +28,9 @@ export default {
   body {
     margin: 0;
     padding: 0;
-    background-color: #4f0e0e;
+    /* background-color: #4f0e0e; */
+    background-image: url('./assets/background.jpg');
+    background-size: 100%;
     width: 100%;
     color:#bb8760;
   font-family: 'Comfortaa', cursive;
