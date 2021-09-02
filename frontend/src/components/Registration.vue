@@ -30,7 +30,7 @@ export default {
                                   }),
                 this.username= "";
                 this.password= "";
-                this.$app.push("/");
+                // this.$app.push("/");
             } catch (error) {
                 console.log(error);
             }
