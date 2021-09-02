@@ -4,7 +4,7 @@
         <h2>Registration</h2>
         <p>If You want to add new useful posts please fill registration form</p>
         <input type="text" name="name" placeholder="userName" v-model="username"/>
-        <input class="password" type="text" placeholder="password" v-model="password"/>
+        <input class="password" type="password" placeholder="password" v-model="password"/>
         <button>Register</button>
     </form>
     </div>
@@ -30,7 +30,11 @@ export default {
                                   }),
                 this.username= "";
                 this.password= "";
+<<<<<<< HEAD
                 // this.$app.push("/");
+=======
+   //             this.$app.push("/");
+>>>>>>> f37dfae69863a273ab1e8985c7489ea7ddde8417
             } catch (error) {
                 console.log(error);
             }
