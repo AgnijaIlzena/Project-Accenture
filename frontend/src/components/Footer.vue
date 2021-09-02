@@ -2,7 +2,6 @@
     <div id="footer-container">
     <h3>Created by Agnija and Agate</h3>
     <p>Accenture Javascript (Kurzeme) Bootcamp, 2021</p>
-    <p>France, Latvia</p>
     </div>
 </template>
 

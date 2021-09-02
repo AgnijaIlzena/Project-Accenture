@@ -1,8 +1,9 @@
 <template>
     <header>
-        <router-link to="./article">All Posts</router-link>
-        <router-link to="./newarticle">Add new post</router-link>
-        <router-link to="./login">Login</router-link>
+        <router-link to="./home" id="H">Home</router-link>
+        <router-link to="./allposts" id="AP">All Posts</router-link>
+        <router-link to="./newarticle" id="ANP">Add new post</router-link>
+        <router-link to="./registration" id="R">Registrate</router-link>
     </header>
 </template>
 
@@ -27,7 +28,7 @@
         text-decoration: none;
         color: #4f0e0e;
         font-weight: bold ;
-        background-color: #bb8760;
+        /* background-color: #bb8760; */
         font-family: 'Comfortaa', cursive;
         color:#4f0e0e;
         position: relative;
@@ -43,8 +44,9 @@
         align-items: center;
     }
     a{
-          margin: 5px 60px; 
+          margin: 5px 60px;     
     }
+  
   }
 
 </style>

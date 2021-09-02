@@ -39,10 +39,10 @@ export default {
     align-items: center;
   }
 
-  /* @media (max-width: 768px) {
+  @media (max-width: 768px) {
     .page-container {
       flex-direction: column;
       align-items: center; 
     }
-  } */
+  }
 </style>
