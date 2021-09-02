@@ -13,10 +13,15 @@
             <!-- <p> {{ postContent }}</p>
             <p> {{ postMonth }}, {{ postYear }}</p> -->
         <!-- </div> -->
-        <p class="linksTo">If You have a source or an idea for a<br>
-        <router-link class="linksTo" to='./newarticle/'>new post</router-link>
-        <br>feel free to<br>
-        <router-link class="linksTo" to='./registration'>join us!</router-link></p>
+        <div id="linksTo">
+        <p>If You have a source or an idea for a
+            <br>
+        <router-link class="linksToGo" to='./newarticle/'>new post</router-link>
+        <br>
+        feel free to
+        <br>
+        <router-link class="linksToGo" to='./registration'>join us!</router-link></p>
+        </div>
     </div>
 </template>
 
@@ -96,11 +101,19 @@ export default {
     margin: 20px 50px;
 }
 
-.linksTo{
-    margin-top: 70px;
+#linksTo{
+    margin-top: 30px;
     text-align: center;
     font-size: 14pt;
     color: #bb8760;
+    line-height: 26px;
+}
+
+.linksToGo{
+    /* border: solid white; */
+    padding: 5px;
+    border-radius: 10px;
+    background-color: white;
 }
 
   @media (max-width: 768px) {

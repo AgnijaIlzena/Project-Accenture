@@ -1,31 +1,23 @@
 <template>
     <div id="home-container">
-    <center>
         <h1>Welcome to our page!</h1>
         <h3>Relax and enjoy!</h3>
         <router-link to="./allposts">
         <img id="welcome" src="../assets/cabernet.jpg" alt="welcome">
         </router-link>
-    </center>
     </div>
 </template>
 
 <script>
 export default {
    name: 'Home',
-//    methods: {
-//        ageAlert(){
-//            return {
-//                alert: "Are You 18 already?!"
-//            };
-//        }
-//    },
 }
 </script>
 
 <style>
 #home-container{
     color: #ffdada;
+    text-align: center;
 }
 #welcome{
     width: 300px;

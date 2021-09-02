@@ -6,6 +6,7 @@ import Registration from './components/Registration.vue'
 import NewArticle from './components/NewArticle.vue'
 import AllPosts from './components/AllPosts.vue'
 import Home from './components/Home.vue'
+import ErrorPage from './components/ErrorPage.vue'
 
 
 Vue.config.productionTip = false;
@@ -38,10 +39,17 @@ const routes = [
   component: Home,
   name: "Home"
 },
+{
+  path: '*',
+  component: ErrorPage,
+  name: "ErrorPage"
+
+}
 ];
 
 const router = new VueRouter ({
-  routes
+  routes,
+  mode: 'history'
 })
 
 new Vue({
