@@ -69,7 +69,7 @@ export default {
 
 form{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     max-width: 60rem;
     height: auto;
@@ -80,8 +80,7 @@ form{
 }
 
 #newArticle-container{
-    /* background-color: #ffffff; */
-    color: #ffdada;
+    color: white;
 }
 
 select{
@@ -92,11 +91,14 @@ select{
     width: 20rem;
     height: 10rem;
     margin: 20px;
-
 }
 @media (max-width: 768px) {
    form {
        padding: 0;
+   }
+   #postBox{
+       width: 15rem;
+       margin: 0;
    }
   }
 </style>

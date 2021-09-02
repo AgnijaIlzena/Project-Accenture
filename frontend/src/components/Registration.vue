@@ -1,8 +1,8 @@
 <template>
     <div id="registration-container">
           <form v-on:submit.prevent='saveUser'>
-        <h2>Registration</h2>
-        <p>If You want to add new useful posts please fill registration form</p>
+        <h1>{{pageTitle}}</h1>
+        <h3>{{pageMessage}}</h3>
         <input type="text" name="name" placeholder="userName" v-model="username"/>
         <input class="password" type="password" placeholder="password" v-model="password"/>
         <button>Register</button>
@@ -17,6 +17,8 @@ export default {
     name: 'Registration',
     data(){
         return {
+            pageTitle: "Registration",
+            pageMessage: "If You want to add new useful posts please fill registration form",
             username: "",
             password: "",
         };
@@ -42,7 +44,7 @@ export default {
 
 <style>
     #registration-container{
-    background-color: #ffdada;
+    color: white;
     display: flex;
     align-items: center;
     height: 100%;
@@ -50,6 +52,10 @@ export default {
     margin: auto;
     justify-content: center;
     padding: 2rem 0;
+}
+
+h3{
+    text-align: center;
 }
 
 .password{
@@ -61,13 +67,13 @@ button{
 }
 
 input{
-  margin: 15px;
+    margin: 15px;
 }
 
 @media (max-width: 768px) {
     p {
-        width: 350px;
-    text-align: center;
+        width: 250px;
+        text-align: center;
     }
   }
 </style>

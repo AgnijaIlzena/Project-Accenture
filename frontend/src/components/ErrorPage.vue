@@ -10,7 +10,7 @@ export default {
   name: 'ErrorPage',
   data(){
       return {
-          message: "ERROR 404",
+        message: "ERROR 404",
         goTo: "Please return to Home page"
       }
   },
@@ -21,5 +21,6 @@ export default {
 #error-container{
     text-align: center;
     justify-content: center;
+    color: white;
 }
 </style>
