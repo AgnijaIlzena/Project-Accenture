@@ -30,11 +30,8 @@ export default {
                                   }),
                 this.username= "";
                 this.password= "";
-<<<<<<< HEAD
                 // this.$app.push("/");
-=======
    //             this.$app.push("/");
->>>>>>> f37dfae69863a273ab1e8985c7489ea7ddde8417
             } catch (error) {
                 console.log(error);
             }
