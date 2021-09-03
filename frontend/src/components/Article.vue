@@ -7,16 +7,41 @@
 </template>
 
 <script>
+// import axios from "axios";
     export default {
         name: 'Article',
+        data(){
+            return {
+            postArray: []
+            }
+        },
         props: {
             postName: String,
             postContent: String,
             postMonth: String,
             postYear: String
         },
+        // mounted() {
+        //     fetch("http://localhost:3000/posts")
+        //     .then(res => res.json())
+        //     .then(data => this.postArray = data)
+        //     .catch (error => console.log(error))
+        //     }
+    }
+    // // method: {
+    // //     getAllPosts(){
+    // //     const postArray = axios.get("http://localhost:3000/posts"),{
+    // //                 name = this.postName,
+    // //                 content = this.postContent;
+    // //                 month = this.postMonth;
+    // //                 year = this.postYear;
+    // //     )};
+
+
+    //     }
+
+    // }
        
-}
       
 </script>
 

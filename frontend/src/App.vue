@@ -1,4 +1,4 @@
-<template>
+<template >
     <div class="page-container">
       <Header/>
     <div id="router-container">
@@ -18,7 +18,7 @@ export default {
   components: {
     Footer,
     Header,
-  },
+  }
   }
 </script>
 

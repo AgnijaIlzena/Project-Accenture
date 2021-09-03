@@ -21,6 +21,7 @@ export default {
             pageMessage: "If You want to add new useful posts please fill registration form",
             username: "",
             password: "",
+            successMessage: "",
         };
     },
     methods: {
@@ -32,8 +33,6 @@ export default {
                                   }),
                 this.username= "";
                 this.password= "";
-                // this.$app.push("/");
-   //             this.$app.push("/");
             } catch (error) {
                 console.log(error);
             }
