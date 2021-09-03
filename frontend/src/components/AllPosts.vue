@@ -24,31 +24,40 @@ export default {
    name: 'AllPosts',
    data (){
         return {
-            postArray: [
-                {
-            postName: "Burgundy",
-            postContent: "With a prominent fishbowl shape, a Burgundy glass traps the aromas of the full-bodied wine. It also balances the wine's intensity. Since the wine comes from thin-skinned grapes, it does not need to be swirled quite as much to enjoy the aromas. The narrow rim mitigates acidity by targeting the wine to the center of the palate.",       
-            postMonth: "January",
-            postYear: "2020"
-            },
-            {
-            postName: "Bordeaux",
-            postContent: "In contrast with Burgundy glasses, Bordeaux glasses are taller, allowing you to maximize the surface area of wine exposed to air as you swirl the liquid up the edge of the glass. Produced from thicker-skinned grapes, Bordeaux wine is best when it's swirled and allowed to breathe. The shape also helps reduce the effects of tannins by concentrating the wine to the back of the tongue.",
-            postMonth: "August",
-            postYear: "2021"
-            },
-            {
-            postName: "Chardonnay",
-            postContent: "The large bowl of a Chardonnay glass balances out oaky notes. Furthermore, the greater surface area exposed to air lets the wine open up to reveal other tastes. The wide aperture evenly spreads the wine across the palate, which brings the complex layers of flavor into focus.",
-            postMonth: "June",
-            postYear: "2021"
-            },
-            ],
+            postArray: [],
         }
    },
+    mounted() {
+        fetch("http://localhost:3000/posts")
+            .then(res => res.json())
+            .then(data => this.postArray = data)
+            .catch (error => console.log(error))
+          },
+            // [
+            //     {
+            // postName: "Burgundy",
+            // postContent: "With a prominent fishbowl shape, a Burgundy glass traps the aromas of the full-bodied wine. It also balances the wine's intensity. Since the wine comes from thin-skinned grapes, it does not need to be swirled quite as much to enjoy the aromas. The narrow rim mitigates acidity by targeting the wine to the center of the palate.",       
+            // postMonth: "January",
+            // postYear: "2020"
+            // },
+            // {
+            // postName: "Bordeaux",
+            // postContent: "In contrast with Burgundy glasses, Bordeaux glasses are taller, allowing you to maximize the surface area of wine exposed to air as you swirl the liquid up the edge of the glass. Produced from thicker-skinned grapes, Bordeaux wine is best when it's swirled and allowed to breathe. The shape also helps reduce the effects of tannins by concentrating the wine to the back of the tongue.",
+            // postMonth: "August",
+            // postYear: "2021"
+            // },
+            // {
+            // postName: "Chardonnay",
+            // postContent: "The large bowl of a Chardonnay glass balances out oaky notes. Furthermore, the greater surface area exposed to air lets the wine open up to reveal other tastes. The wide aperture evenly spreads the wine across the palate, which brings the complex layers of flavor into focus.",
+            // postMonth: "June",
+            // postYear: "2021"
+            // },
+            // ],
+        // }
+  //  },
    components: {
        Article
-   }
+   },
     // data(){
     //     return {
     //         // id="",cd 
@@ -77,7 +86,8 @@ export default {
     //         }
     //     },
     // },
-};
+
+}
 
 </script>
 
