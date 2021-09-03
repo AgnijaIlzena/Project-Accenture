@@ -19,16 +19,11 @@
 <script>
 import Article from './Article.vue'
 // import axios from "axios";
-
 export default {
    name: 'AllPosts',
    data (){
         return {
 postArray:[]
-
-
-
-
             // postArray: [
             //     {
             // postName: "Burgundy",
@@ -66,16 +61,11 @@ mounted() {
 }) 
             .catch (error => console.log(error))
           },
-
   
 };
-
-
-
 </script>
 
 <style>
-
 #all-posts-container{
     display: flex;
     flex-direction: row;
@@ -84,10 +74,8 @@ mounted() {
     text-align: center;
     margin: 20px 50px;
 }
-
   @media (max-width: 768px) {
     #all-posts-container {
       flex-direction: column;
-
-
-
+    }
+    }
