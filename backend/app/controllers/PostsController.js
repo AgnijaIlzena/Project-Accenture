@@ -3,9 +3,9 @@ const PostsRepository = require("../repositories/PostsRepository");
 class PostsController {
   // used to get all blog posts
   async getAllPosts(req, res) {
-   // console.log(req.body);
+    console.log(req.body);
     const posts = await PostsRepository.getAllPosts();
-    res.status(201).json({ message: "Successfully delivered." });
+    res.json({ posts});
   }
 
   // used to add new blog post

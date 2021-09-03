@@ -9,7 +9,7 @@ class PostsRepository {
   async getAllPosts() {
     try {
       const list = await this._storage.getAllPosts();
-     // console.log(list);
+      console.log(list);
       return list.map((storeData) => {
         const postModel = new Post(storeData);
         return postModel.getData();

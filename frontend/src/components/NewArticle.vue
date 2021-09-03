@@ -45,7 +45,7 @@ export default {
     methods: {
         async savePost(){
             try {
-                await axios.post("http://localhost:3000/posts/create", {
+                await axios.post("http://localhost:3001/posts/create", {
                     name: this.postName,
                     content: this.postContent,
                     month: this.postMonth,

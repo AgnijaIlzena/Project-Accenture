@@ -21,7 +21,7 @@ app.get("/posts", PostsController.getAllPosts);
 app.post("/user/create", UserController.createUser);
 
 // server listen
-const port = 3000;
+const port = 3001;
 app.listen(port, function () {
   console.log(`Server is running on: http://localhost:${port} .`);
 });

@@ -26,7 +26,7 @@ export default {
     methods: {
         async saveUser(){
             try {
-                await axios.post("http://localhost:3000/user/create", {
+                await axios.post("http://localhost:3001/user/create", {
                     username: this.username,
                     password: this.password,
                                   }),
