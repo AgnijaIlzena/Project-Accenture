@@ -21,28 +21,8 @@
             postMonth: String,
             postYear: String
         },
-        // mounted() {
-        //     fetch("http://localhost:3000/posts")
-        //     .then(res => res.json())
-        //     .then(data => this.postArray = data)
-        //     .catch (error => console.log(error))
-        //     }
     }
-    // // method: {
-    // //     getAllPosts(){
-    // //     const postArray = axios.get("http://localhost:3000/posts"),{
-    // //                 name = this.postName,
-    // //                 content = this.postContent;
-    // //                 month = this.postMonth;
-    // //                 year = this.postYear;
-    // //     )};
 
-
-    //     }
-
-    // }
-       
-      
 </script>
 
 <style>
@@ -53,13 +33,13 @@
     flex-direction: column;
     width: 100%;
     height: 100%;
-    color:black;
+    color:#EEE6CE;
     justify-content: center;
     font-size: 12pt;
     margin: 10px;
     padding: 20px;
-    background-color: hsla(86, 89%, 64%, 0.3);
-    border-radius: 20%;
+    background-color: #313552;
+    border-radius: 1%;
     box-shadow: -2px 3px 5px 0px rgba(0,0,0,0.75);
 }
 

@@ -32,7 +32,7 @@ export default {
    },
     
   mounted() {
-         fetch("http://localhost:3001/posts")
+         fetch("http://localhost:3000/posts")
             .then(res => res.json())
             .then(data => {
               this.postArray = data.posts;

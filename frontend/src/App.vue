@@ -29,8 +29,10 @@ export default {
     margin: 0;
     padding: 0;
     background-image: url('./assets/background.jpg');
-    background-size: 100%;
-    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
     font-family: 'Comfortaa', cursive;
   }
 

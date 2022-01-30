@@ -27,7 +27,7 @@ export default {
     methods: {
         async saveUser(){
             try {
-                await axios.post("http://localhost:3001/user/create", {
+                await axios.post("http://localhost:3000/user/create", {
                     username: this.username,
                     password: this.password,
                                   }),
@@ -43,16 +43,20 @@ export default {
 
 <style>
     #registration-container{
-    color: white;
+
+    color: #EEE6CE;
     display: flex;
-    align-items: center;
-    height: 100%;
     flex-direction: row;
     margin: auto;
-    justify-content: center;
     padding: 2rem 0;
-}
+   }
 
+ form {
+   background-color: #313552;
+   border-radius: 1%;
+
+
+    }
 h3{
     text-align: center;
 }

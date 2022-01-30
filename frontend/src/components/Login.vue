@@ -22,7 +22,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap');
 
 #login-container{
-    color: #ffdada;
+    color: #EEE6CE;
     display: flex;
     align-items: center;
     max-width: 60rem;

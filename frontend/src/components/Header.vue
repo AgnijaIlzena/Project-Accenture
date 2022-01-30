@@ -19,14 +19,14 @@
 
     header {
         display: flex;
-        background-color: #FFF76A;
+        background-color: #313552;
         width: 100%;
         justify-content: space-between;
     }
       
     a{
         text-decoration: none;
-        color: black;
+        color: #EEE6CE;
         font-weight: bold ;
         font-family: 'Comfortaa', cursive;
         position: relative;
@@ -44,8 +44,6 @@
     a{
           margin: 5px 60px;     
     }
-  
-  }
-
+    }
 </style>
 

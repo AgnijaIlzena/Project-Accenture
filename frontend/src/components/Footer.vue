@@ -14,8 +14,8 @@ export default {
 
 <style>
 #footer-container{
-    background-color: #FFF76A;
-    color: black;
+    background-color: #313552;
+    color: #EEE6CE;
     display: flex;
     font-size: 8pt;
     line-height: 10pt;
